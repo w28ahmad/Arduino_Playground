@@ -1,4 +1,4 @@
-#Arduino Playground
+# Arduino Playground
 This is a simple arduino repo for my some of my personal tests.
 
 ## Led Blink
