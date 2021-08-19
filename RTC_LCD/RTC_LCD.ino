@@ -32,8 +32,8 @@ void setup() {
   DS3231_init(DS3231_CONTROL_INTCN);
 
   t.hour=1; 
-  t.min=51;
-  t.sec=0;
+  t.min=59;
+  t.sec=50;
   t.mday=19;
   t.mon=8;
   t.year=2021;
@@ -50,17 +50,19 @@ void loop() {
 
   // Display Date
   lcd.setCursor(0,0);
-  lcd.print(String(String(t.mday)+"th "+months[t.mon-1])+". "+String(t.year));
+  lcd.print( (t.mday < 10 ? "0" + String(t.mday) : String(t.mday)) +"th "+months[t.mon-1]+".");
+  lcd.setCursor(12,0);
+  lcd.print(String(t.year));
 
   // Display Time
   lcd.setCursor(0,1);
-  lcd.print(String(t.hour)+":"+String(t.min)+":"+String(t.sec));
+  lcd.print((t.hour < 10 ? "0"+String(t.hour) : String(t.hour)) +":"+  \
+            (t.min < 10 ? "0"+String(t.min) : String(t.min)) + ":" +  \
+            (t.sec < 10 ? "0"+String(t.sec) : String(t.sec)));
 
   // Display Temperature
   lcd.setCursor(10,1);
   lcd.print(String(temperature)+"C");
-
-
   
   // Update one second later
   delay(1000);
