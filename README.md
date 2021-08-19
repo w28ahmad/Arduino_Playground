@@ -7,4 +7,7 @@ Blinks the led at 1s intervals
 ## Seven Segment Display
 Increments a seven segment counter display on button push via polling
 
+## LCD Display
+A simple hello world message on the LCD display
+
 
