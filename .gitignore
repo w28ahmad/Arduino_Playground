@@ -1,3 +1,6 @@
 *config.h
 *ds3231.cpp
 *ds3231.h
+background.jpg
+__pycache__
+.vscode
