@@ -25,3 +25,7 @@ The webcam feed is parsed using opencv to generate data on which a machine learn
     <img src="./Computer_Vision_LCD/demos/monitor.gif" width="400" height="400" />
     <img src="./Computer_Vision_LCD/demos/lcd.gif" width="400" height="400" />
 </p>
+
+## Ultrasonic Fan
+Turn on a fan when someone is infront of the ultra sonic sensor
+
